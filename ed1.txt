@@ -1,0 +1,8 @@
+- OOP 1
+- PDO
+- Cấu trúc lại project theo cấu trúc framework (autoload, oop, jquery, validate, ajax, ...) 3
+
+//////////////////FRAMEWORK//////////////
+- Mô hình MVC 2
+- autoload
+- OOP

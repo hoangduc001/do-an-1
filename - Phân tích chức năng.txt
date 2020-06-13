@@ -1,0 +1,85 @@
+- Phân tích chức năng
+- Phân tích csdl
+- Thiết kế frontend
+- init project
+*
+admin:	
+	-Đăng nhập
+	-đăng xuất
+	-đổi mật khẩu
+	-Quản lý user
+	-Thêm tài khoản đăng nhập
+	-Quản lí tin tức
+	-Quản lí thông tin cá nhân
+	-Thêm tài khoản đăng nhập
+khách hàng:
+	Đăng nhập/xuất	
+	Quản lí thông tin cá nhân
+	Sửa thông tin cá nhân
+	Xem thông tin website
+	Tìm kiếm ưu đãi khách sạn, chỗ nghỉ dạng nhà ở và nhiều hơn nữa...
+	Đặt phòng
+	Quản lí đặt phòng
+
+khách hàng k có tài khoản:
+	Xem thông tin sản phẩm
+	Xem thông tin website, chính sách
+	Tìm kiếm ưu đãi khách sạn, chỗ nghỉ dạng nhà ở và nhiều hơn nữa...
+	Đăng ký tài khoản
+*csdl
+
+2:table 
+
+- users
+ + id (khóa chính)
+ + email
+ + password
+ + age
+ + address
+ + gender
+ + name
+ + phone
+
+- booking_tour
+ + id (khóa chính)
+ + user_id (khóa ngoại liên kết user)
+ + tour_id (khóa ngoại liên kết detail_tour)
+ + booking_detail_id (khóa ngoại liên kết detail_tour)
+
+ - booking_hotel
+ + id (khóa chính)
+ + user_id  (khóa ngoại liên kết user)
+ + hotel_id  (khóa ngoại liên kết hotel)
+ + detail_tour_id  (khóa ngoại liên kết detail_tour)
+
+-booking_detail
+ +id (kc)
+ +address
+ +phương thức thanh toán
+ +giá
+ +tên hóa đơn,dịch vụ
+ +số lượng
+
+- detail_tour
+ +id (kc)
+ +điểm đến
+ +phương tiện
+ +thời gian
+ +điểm khởi hành
+ +ngày khởi hành
+ +tên nhà cung cấp
+ +địa chỉ
+ +sđt liên hệ
+ +mota
+ +anh
+ +loại p
+ +tối đa
+ +tùy chọn
+ +giá 1 đêm
+ +số lượng
+ +giá p
+
+- media
+
+	
+
